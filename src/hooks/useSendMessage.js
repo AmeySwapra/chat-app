@@ -19,7 +19,7 @@ const useSendMessage = () => {
 		setLoading(true);
 		try {
 			const res = await fetch(
-				`http://localhost:8080/message/send/${selectedConversation.id}`,
+				`https://chat-app-backend-x04z.onrender.com/message/send/${selectedConversation.id}`,
 				{
 					method: "POST",
 					headers: {

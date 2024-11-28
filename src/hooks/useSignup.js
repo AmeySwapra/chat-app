@@ -13,7 +13,7 @@ const useSignup = () => {
     setLoading(true);
     try {
       console.log({ fullname, email, username, password, confirmpassword, gender })
-      const response = await fetch("http://localhost:8080/auth/signup", {
+      const response = await fetch("https://chat-app-backend-x04z.onrender.com/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ fullname, email, username, password, confirmpassword, gender }),

@@ -1,4 +1,4 @@
-const GenderCheckbox = ({ onCheckboxChange, selectedGender }) => {
+const GenderCheckBox = ({ onCheckboxChange, selectedGender }) => {
   const genders = ["male", "female"];
 
   return (
@@ -24,4 +24,4 @@ const GenderCheckbox = ({ onCheckboxChange, selectedGender }) => {
   );
 };
 
-export default GenderCheckbox;
+export default GenderCheckBox;

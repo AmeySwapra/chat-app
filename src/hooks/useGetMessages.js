@@ -10,7 +10,7 @@ const useGetMessages = () => {
 		const getMessages = async () => {
 			setLoading(true);
 			try {
-				const res = await fetch(`http://localhost:8080/message/get/${selectedConversation.id}`, {
+				const res = await fetch(`https://chat-app-backend-x04z.onrender.com/message/get/${selectedConversation.id}`, {
 					method: "GET",
 					credentials: "include", 
 				  });

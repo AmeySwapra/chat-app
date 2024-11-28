@@ -9,7 +9,7 @@ const useLogout = () => {
 	const logout = async () => {
 		setLoading(true);
 		try {
-			const res = await fetch("http://localhost:8080/auth/logout", {
+			const res = await fetch("https://chat-app-backend-x04z.onrender.com/auth/logout", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 			});
